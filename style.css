@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #535a9e,#2074c3, #37b3cc,#8abac4);
+    margin: 50px 2%;
+}
+
+.title {
+    font-size: 25px;
+    text-align: center;
+    margin: 0 0 30px 0;
+    color: white;
+    text-shadow: 3px 1px black;
+}
+
+.input {
+    display: grid;
+    column-gap: 5px;
+    grid-template-columns: 60% 10%;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.textarea {
+    min-height: 50px;
+    height: 50px;
+    max-width: 100%;
+    min-width: 100%;
+    border-radius: 10px;
+    border-color: #333;
+    font-size: 20px;
+    padding: 10px 10px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.textarea::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #333;
+}
+
+.textarea::-webkit-scrollbar {
+    width: 10px;
+    cursor: pointer;
+}
+
+.textarea::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #8f8acc;
+    cursor: pointer;
+}
+
+.textarea:focus {
+    outline: none;
+}
+
+.buttoninput {
+    border-radius: 10px;
+    border-color: #333333;
+    background-color: rgb(43, 113, 226);
+    font-size: 20px;
+}
+
+.buttoninput:hover {
+    background-color: rgb(84, 126, 194);
+    color: white;
+}
+
+.todolist {
+    margin-top: 20px;
+}
+
+.itemall {
+    display: grid;
+    grid-template-columns: 60% 5% 5%;
+    justify-content: center;
+    margin-bottom: 2px;
+}
+
+.item, .check-button, .trash-button {
+    border: black;
+    background-color: rgb(13, 169, 221);
+    min-height: 50px;
+    padding: 20px 20px;
+    border-radius: 12px;
+    margin-bottom: 5px;
+}
+
+.item {
+    word-wrap: break-word;
+    word-break: break-all;
+    border-radius: 10px 0 0 10px;
+    display: grid;
+    align-content: center;
+    font-size: 20px;
+}
+
+.check-button{
+    opacity: 1;
+    font-size: 20px;
+    background-color: green;
+    color: white;
+}
+
+.trash-button {
+    font-size: 20px;
+    opacity: 1;
+    background-color:rgb(246, 77, 4);
+    color: white;
+    margin-inline-end: 5px;
+}
+
+.check-button:hover {
+    background-color: #fefefe;
+    color: green;
+}
+
+.trash-button:hover {
+    background-color: #ffffff;
+    color: rgb(246, 77, 4);
+}
+
+.checklist {
+    text-decoration: line-through;
+}
+
+button, .check-button, .trash-button {
+    cursor: pointer;
+}
+
